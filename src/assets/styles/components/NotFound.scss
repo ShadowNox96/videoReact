@@ -1,0 +1,33 @@
+$blanco: white;
+
+.container {
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__title {
+    color: $blanco;
+    font-size: 100px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 5px 5px 5px black;
+}
+
+.container__p {
+    color: $blanco;
+    font-size: 30px;
+}
+
+.container__a {
+    color: $blanco;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.container__a:hover{
+    text-decoration: underline;
+}

@@ -8,6 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundel.js',
+    publicPath: '/'
   },
   // resolver las extensiones que vamos a usar para el proyecto
   resolve: {
@@ -56,6 +57,9 @@ module.exports = {
         ],
       },
     ],
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebPackPlugin({
